@@ -3,16 +3,21 @@ import s from './MyPosts.module.css';
 import Post from './Post/Post';
 
 const MyPosts = () => {
-  return <div>
-    My posts
-    <div>
-      <textarea></textarea>
-      <button>Add post</button>
+  return (
+    <div className={s.postsBlock}>
+      <h3>My posts</h3>
+      <div>
+        <div>
+          <textarea></textarea>
+        </div>
+        <button>Add post</button>
+      </div>
+      <div className={s.post}>
+        <Post message="Hi, how are you?" like="Like 15" />
+        <Post message="It's my first post" like="Like 20" />
+      </div>
     </div>
-    <div className={s.post}>
-      <Post />
-    </div>
-  </div>
+  )
 }
 
 export default MyPosts;
