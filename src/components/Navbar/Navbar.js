@@ -22,7 +22,7 @@ const Navbar = () => {
       <div className={s.item}>
         <NavLink to="./settings" className={setClass}>Settings</NavLink>
       </div>
-    </nav >
+    </nav>
   )
 }
 
